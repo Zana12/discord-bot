@@ -10,5 +10,9 @@ client.on('message', msg => {
     msg.reply('Pong!');
   }
 });
-
+client.on('message', msg => {
+  if (msg.content === 'zana') {
+    msg.reply('Pong!');
+  }
+});
 client.login(token);
