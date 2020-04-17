@@ -15,4 +15,4 @@ client.on('message', msg => {
     msg.reply('Pong!');
   }
 });
-client.login(token);
+client.login(token).catch(err => console.log(err));
